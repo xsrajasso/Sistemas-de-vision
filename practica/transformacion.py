@@ -1,9 +1,12 @@
 #Librerias
 import cv2
 import numpy as np
+print("LIBRERIAS IMPORTADAS CORRECTAMENTE")
+
+ubicacion = "C:/Users/xsraj/Documents/Sistemas-de-vision/practica/"
 
 #Imagen que vamos a transformar
-image = cv2.imread("Ave_1.png")
+image = cv2.imread(ubicacion + "ave_1.png")
 
 #Almacenamos el alto y ancho de la imagen # de aspecto fila, columnas
 #[0][0] es un cuadro
