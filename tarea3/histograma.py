@@ -7,10 +7,10 @@
 import cv2
 from matplotlib import pyplot as plt
 
-ubicacion = "C:/Users/xsraj/Documents/Sistemas-de-vision/practica/tarea3/"
+ubicacion = "C:/Users/xsraj/Documents/Sistemas-de-vision/tarea3/"
 
 #Imagen que vamos a transformar
-img = cv2.imread(ubicacion + "Ave_2.jpg", 0)
+img = cv2.imread(ubicacion + "lenabw.png", 0)
 
 # reads an input image
 #img = cv2.imread("Ave_2.jpg",0)
