@@ -21,10 +21,10 @@ height, width = image.shape[0], image.shape[1]
 y1, x1 = height / 2, width / 2
 
 #Ejercicio 1 Traslacion
-#y1, x1 = 100, 250
+#y1, x1 = 250, 100
 
 #Ejercicio 2 Traslacion
-#y1, x1 = 600, 10
+#y1, x1 = 10, 600
 
 #Traslacion
 #T = np.float32([[1,0,posicion en x],[0,1,posicion en y]])
@@ -40,7 +40,7 @@ T = np.float32([[1, 0, x1],[0, 1, y1]])
 #T = cv2.getRotationMatrix2D((x1, y1), -90, 1)
 
 #Ejercicio 2 Rotacion
-#T = cv2.getRotationMatrix2D((x1, y1), 180, 1)
+T = cv2.getRotationMatrix2D((x1, y1), 180, 1)
 
 #Se usa warpAffine para transformar
 #La imagen usando la matriz, T
@@ -50,7 +50,8 @@ img_Out = cv2.warpAffine(image, T, (width, height))
 #Presentacion de la imagen y espera de cancelacion de instruccion
 
 cv2.imshow("Originalimage", image)
-cv2.imshow("Translation", img_Out)
+#cv2.imshow("Translation", img_Out)
+cv2.imshow("Rotacion", img_Out)
 cv2.waitKey()
 
 cv2.destroyAllWindows()
