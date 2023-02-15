@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 print("LIBRERIAS IMPORTADAS CORRECTAMENTE")
 
-ubicacion = "C:/Users/xsraj/Documents/Sistemas-de-vision/practica/"
+ubicacion = "C:/Users/xsraj/OneDrive/Documentos/GitHub/Sistemas-de-vision/tarea2/"
 
 #Imagen que vamos a transformar
 image = cv2.imread(ubicacion + "ave_1.png")

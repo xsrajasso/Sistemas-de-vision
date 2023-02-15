@@ -5,10 +5,10 @@ import cv2
 import numpy as np
 print("LIBRERIAS IMPORTADAS CORRECTAMENTE")
 
-ubicacion = "C:/Users/xsraj/Documents/Sistemas-de-vision/tarea1/"
+ubicacion = "C:/Users/xsraj/OneDrive/Documentos/GitHub/Sistemas-de-vision/tarea2/"
 
 #Imagen que vamos a transformar
-image = cv2.imread(ubicacion + "ave_2.jpg")
+image = cv2.imread(ubicacion + "Ave_2.jpg")
 
 #Almacenamos el alto y ancho de la imagen # de aspecto fila, columnas
 #[0][0] es un cuadro
@@ -28,7 +28,7 @@ y1, x1 = height / 2, width / 2
 
 #Traslacion
 #T = np.float32([[1,0,posicion en x],[0,1,posicion en y]])
-T = np.float32([[1, 0, x1],[0, 1, y1]])
+#T = np.float32([[1, 0, x1],[0, 1, y1]])
 
 #Rotacion
 #T = cv2.getRotationMatrix2D((coordenadas centro de rotacion), grados, escala)
@@ -40,7 +40,7 @@ T = np.float32([[1, 0, x1],[0, 1, y1]])
 #T = cv2.getRotationMatrix2D((x1, y1), -90, 1)
 
 #Ejercicio 2 Rotacion
-T = cv2.getRotationMatrix2D((x1, y1), 180, 1)
+T = cv2.getRotationMatrix2D((x1, y1), 90, 1)
 
 #Se usa warpAffine para transformar
 #La imagen usando la matriz, T
