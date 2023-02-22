@@ -8,7 +8,7 @@ print("LIBRERIAS IMPORTADAS CORRECTAMENTE")
 ubicacion = "C:/Users/xsraj/OneDrive/Documentos/GitHub/Sistemas-de-vision/Laboratorio/practica1/"
 
 #Imagen que vamos a transformar
-image = cv2.imread(ubicacion + "Ave_2.jpg")
+image = cv2.imread(ubicacion + "pic1r.jpg")
 
 #Almacenamos el alto y ancho de la imagen # de aspecto fila, columnas
 #[0][0] es un cuadro
