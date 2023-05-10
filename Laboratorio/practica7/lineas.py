@@ -13,7 +13,7 @@ def imshow(title = "Image", image = None, size = 10):
     plt.title(title)
     plt.show()
 
-image = cv2.imread('images/soduku.jpg')
+image = cv2.imread('images/teclado.jpg')
 imshow('Original', image)
 
 # Convertimos a escalas de grises y aplicamos filtro canny

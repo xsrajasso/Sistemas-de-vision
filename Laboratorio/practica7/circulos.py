@@ -13,10 +13,10 @@ def imshow(title = "Image", image = None, size = 10):
     plt.title(title)
     plt.show()
 
-image = cv2.imread('images/bottlecaps.jpg')
+image = cv2.imread('images/cuaderno.jpg')
 imshow('Original', image)
 
-image = cv2.imread('images/bottlecaps.jpg')
+image = cv2.imread('images/cuaderno.jpg')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 blur = cv2.medianBlur(gray, 5)
