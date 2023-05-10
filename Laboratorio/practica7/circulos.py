@@ -34,4 +34,6 @@ for i in circles[0,:]:
     # Dibujamos circulo intero
     cv2.circle(image, (i[0], i[1]), 2, (255, 0, 0), 8)
 
+edges = cv2.Canny(gray, 100, 170, apertureSize = 3)
+imshow('Filtro Canny', edges)
 imshow('Detected circles', image)
