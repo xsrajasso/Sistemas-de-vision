@@ -28,7 +28,8 @@ def faces():
     face_classifier = cv2.CascadeClassifier('Haarcascades/haarcascade_frontalface_default.xml')
 
     # Cargamos nuestra imagen y la convertimos a escala de grises
-    image = cv2.imread('images/yo.jpg')
+    #image = cv2.imread('images/yo.jpg')
+    cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
     imshow('Imagen Original', image)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
